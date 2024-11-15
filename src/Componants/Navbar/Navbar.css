@@ -1,0 +1,16 @@
+.nav {
+    max-width: 1200px;
+    background-color: white !important;
+    border: 5px solid #c3c8ff;
+    border-top: none;
+    margin: 7px auto !important;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav-sec2{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.nav-btn {
+    background-color: #384bff !important;
+}

@@ -1,0 +1,36 @@
+.client-sec {
+    background-color:  #f2f6fe;
+    position: relative ;
+    padding-top: 300px !important;
+}
+.client-card {
+    border: none;
+    background-color: white !important;
+}
+.client-mid-card {
+    border: none;
+    background-color: #384bff !important;
+    color: white;
+}
+.line {
+    width: 350px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ebedff;
+}
+.mid-line {
+    background-color: #384bff !important;
+    width: 33%;
+    border-radius: 5px;
+}
+.contactus {
+    background-color: #384bff;
+    border-radius: 20px;
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contactus button {
+    border: none;
+}

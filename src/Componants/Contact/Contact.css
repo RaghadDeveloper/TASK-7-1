@@ -1,0 +1,54 @@
+.contact-card {
+    background-color: #384bff !important;
+    width: 100% !important;
+}
+.icon-border {
+    width: 40px;
+    height: 40px;
+    border: 2px dashed white;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.contact-form {
+    width: 100% !important;
+    height: 500px;
+    background-color: white !important;
+    border: none;
+}
+.contact-form Button {
+    width: fit-content;
+    background-color: #384bff;    
+}
+.email-name {
+    width: 50% !important;
+}
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+textarea {
+    height: 100px;
+    border-radius: 5px;
+
+}
+@media (max-width : 576px) {
+    form div {
+        flex-direction: column !important;
+    }
+    .email-name {
+        width: 100% !important;
+    }
+    input {
+        width: 100% !important;
+    }
+}

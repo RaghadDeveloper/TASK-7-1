@@ -1,0 +1,32 @@
+.add-border {
+    border: 1px solid #c3c8ff;
+    width: max-content;
+}
+.blog-card {
+    height: 500px;
+    margin-bottom: 100px;
+}
+.blog-card .b-card {
+    width: 85% !important;
+    background-color: white !important;
+    border: none;
+    position : absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 220px;
+}
+.home-footer{
+    width: 95%;
+    height: 220px;
+    background-color: #384bff;
+    bottom: -120px;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+.home-footer img {
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+}
