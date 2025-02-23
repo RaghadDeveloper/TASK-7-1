@@ -5,7 +5,7 @@ import Pricing from '../Componants/Pricing/Pricing';
 import Client from '../Componants/Client/Client';
 import Blog from '../Componants/Blog/Blog';
 import Footer from '../Componants/Footer/Footer';
-
+import { Outlet } from "react-router-dom";
 
 const MainPage = () => {
   return (
@@ -17,6 +17,7 @@ const MainPage = () => {
         <Client />
         <Blog />
         <Footer name='home'/> 
+        <Outlet />
     </div>
   )
 }

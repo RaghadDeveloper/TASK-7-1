@@ -14,7 +14,7 @@ function r_Navbar () {
   return (
     <Navbar collapseOnSelect expand="lg" className="w-100 bg-body-tertiary m-2 px-3 rounded-pill z-3 nav position-fixed top-0">
       <Container className='d-flex justify-content-between'>
-        <Navbar.Brand href="#home"><img src="./../../src/assets/images/logo.svg" alt="logo" width={'150px'}/></Navbar.Brand>
+        <Navbar.Brand href="/"><img src="./../../src/assets/images/logo.svg" alt="logo" width={'150px'}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" className='border-none'/>
         <Navbar.Collapse id="responsive-navbar-nav" className='d-lg-flex justify-content-between'>
           <Nav className="m-auto">

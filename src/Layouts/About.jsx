@@ -10,6 +10,7 @@ const About = () => {
         <Hero2 name="about" title='About Us'/>
         <Member />
         <Footer name= "about"/>
+        
     </div>
   )
 }

@@ -1,0 +1,12 @@
+.gg::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 1px;
+    height: 120px;
+    border: 1px solid rgba(255, 255, 255, 0.447);
+    margin-left: -20px;
+}
+.green-star {
+    color: #00b67a;
+}
