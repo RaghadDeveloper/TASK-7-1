@@ -6,12 +6,14 @@ import Client from '../Componants/Client/Client';
 import Blog from '../Componants/Blog/Blog';
 import Footer from '../Componants/Footer/Footer';
 import { Outlet } from "react-router-dom";
+import Platforms from "../Componants/Platforms/Platforms";
 
 const MainPage = () => {
   return (
     <div>
         <Navbar />
         <Hero />
+        <Platforms />
         <Services />
         <Pricing />
         <Client />

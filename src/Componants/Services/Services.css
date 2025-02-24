@@ -1,36 +1,12 @@
 h2 {
     color: #384bff;
 }
-.card {
-    border-radius: 20px;
-    background-color: #f3f7fb !important;
-    border-color: #d8e0ff !important;
-}
-.card Button {
-    border: 1px solid #c3c8ff;
-}
-.icon {
-    border: 1px solid #c3c8ff;
-    width: 40px;
-    height: 40px;
-    color: #384bff;
-}
-.arrow-icon2 {
-    border-radius: 50%;
-}
-.arrow-icon2 {
-    background-color: #384bff;
-}
 .card-group1 {
     padding-bottom: 400px;
 }
 .card-group2 {
     padding-top: 300px !important;
     background-color: #18185e;
-}
-.card2 {
-    background-color: #18185e !important;
-    border: none !important;
 }
 .video {
     position: absolute;

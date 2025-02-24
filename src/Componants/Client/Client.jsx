@@ -8,6 +8,7 @@ import { TbArrowNarrowRight } from "react-icons/tb";
 import { FaStar } from "react-icons/fa6";
 import { CiStar } from "react-icons/ci";
 import { RiDoubleQuotesR } from "react-icons/ri";
+import CenterTitle from '../CenterTitle/CenterTitle';
 
 export default function Client() {
   return (
@@ -23,8 +24,7 @@ export default function Client() {
             <button className='rounded-pill px-4 py-2'>TALK TO A SPECIALIST <TbArrowNarrowRight /></button>
         </section>
         <div className="container d-flex flex-column align-items-center gap-5">
-            <h2 className='fs-6 d-flex gap-2 align-items-center'><TbArrowNarrowLeft />TESTIMONIALS<TbArrowNarrowRight /></h2>
-            <p className='fs-2 fw-bolder'>Our Latest Client Feedback</p>
+            <CenterTitle title={'TESTIMONIALS'} text={'Our Latest Client Feedback'} />
             <Row className='w-100 d-flex flex-wrap justify-content-center row-gap-5'>
                 <Col lg={4} md={8} sm={12}>
                 <Card className='w-100 client-card rounded p-3 d-none d-lg-flex d-md-flex' style={{ width: '18rem' }}>

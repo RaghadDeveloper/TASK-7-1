@@ -6,12 +6,12 @@ import { TbArrowNarrowRight } from "react-icons/tb";
 import { GiCheckMark } from "react-icons/gi";
 import { FaRegCircleQuestion } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
+import CenterTitle from '../CenterTitle/CenterTitle';
 
 export default function Pricing() {
     return (
         <section className='pric-sec d-flex flex-column justify-content-center align-items-center'>
-            <h2 className='fs-6 d-flex gap-2 align-items-center'><TbArrowNarrowLeft />OUR PRICING<TbArrowNarrowRight /></h2>
-            <p className='fs-2 fw-bolder'>Our Awesome Pricing Plans</p>
+            <CenterTitle title={'OUR PRICING'} text={'Our Awesome Pricing Plans'} />
             <div className='d-flex gap-4 align-items-end'>
                 <div className='month-year rounded-pill d-flex justify-content-center align-items-center px-3 py-2 gap-3'>
                     <p className='monthly text-light rounded-pill p-2 m-0'>Monthly</p>

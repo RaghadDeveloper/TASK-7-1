@@ -3,22 +3,12 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 import { TbArrowNarrowLeft } from "react-icons/tb";
 import { TbArrowNarrowRight } from "react-icons/tb";
+import LeftTitle from '../LeftTitle/LeftTitle';
 
 export default function Blog() {
   return (
     <section className='py-5 position-relative'>
-      <div className='container'>
-        <h2 className='fs-6 d-flex gap-2 align-items-center'><TbArrowNarrowLeft />BLOG & NEWS<TbArrowNarrowRight /></h2>
-
-        <div className='d-flex justify-content-between flex-wrap gap-4'>
-          <p className='fs-2 fw-bolder'>Featyred News And Insights</p>
-          <div className='d-flex gap-2'>
-            <TbArrowNarrowLeft className='arrow-icon1 fs-1 p-1 text-secondary shadow-sm rounded-circle' />
-            <TbArrowNarrowRight className='arrow-icon2 fs-1 p-1 text-light rounded-circle' />
-          </div>
-        </div>
-      </div>
-
+      <LeftTitle title = {'BLOG & NEWS'} text = {'Featyred News And Insights'} />
 
       <div className='container my-5 d-flex flex-wrap justify-content-center gap-5'>
         <div className='blog-card position-relative'>
