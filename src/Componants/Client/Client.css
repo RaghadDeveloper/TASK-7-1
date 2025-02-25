@@ -3,15 +3,6 @@
     position: relative ;
     padding-top: 300px !important;
 }
-.client-card {
-    border: none;
-    background-color: white !important;
-}
-.client-mid-card {
-    border: none;
-    background-color: #384bff !important;
-    color: white;
-}
 .line {
     width: 350px;
     height: 10px;

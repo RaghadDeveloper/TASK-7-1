@@ -1,0 +1,9 @@
+.client-card {
+    border: none;
+    background-color: white !important;
+}
+.client-mid-card {
+    border: none;
+    background-color: #384bff !important;
+    color: white;
+}
