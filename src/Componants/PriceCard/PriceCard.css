@@ -1,0 +1,18 @@
+.pricing-card {
+    background-color: white !important;
+    width: 350px !important;
+}
+.pricing-card button {
+    color: #384bff;
+    background-color: white !important;
+    border: 1px solid #d8e0ff;
+    border-radius: 15px;
+    height: 50px;
+}
+.card-intro {
+    background-color: #384bff;
+    border-radius: 15px;
+}
+.primary-color {
+    color: #384bff;
+}

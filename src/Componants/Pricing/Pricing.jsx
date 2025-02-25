@@ -1,14 +1,56 @@
 import './Pricing.css'
 import React from 'react'
-import Card from 'react-bootstrap/Card';
-import { TbArrowNarrowLeft } from "react-icons/tb";
-import { TbArrowNarrowRight } from "react-icons/tb";
-import { GiCheckMark } from "react-icons/gi";
-import { FaRegCircleQuestion } from "react-icons/fa6";
-import { RxCross2 } from "react-icons/rx";
 import CenterTitle from '../CenterTitle/CenterTitle';
+import PriceCard from '../PriceCard/PriceCard';
 
 export default function Pricing() {
+
+    const cardData = [
+        {
+            title: 'Regular Plans',
+            price: 49,
+            iconSrc: './../../src/assets/images/pricingIcon1_1.svg',
+            features: [
+                { text: '100 GB SSD Storage', included: true },
+                { text: '200 GB Bandwidth', included: true },
+                { text: 'Unlimited Databases', included: true },
+                { text: 'Free SSL Certificate', included: true },
+                { text: '24/7 Support', included: true },
+                { text: 'Advanced Analytics', included: false },
+                { text: 'Dedicated IP', included: false },
+            ],
+        },
+        {
+            title: 'Regular Plans',
+            price: 49,
+            iconSrc: './../../src/assets/images/pricingIcon1_1.svg',
+            features: [
+                { text: '100 GB SSD Storage', included: true },
+                { text: '200 GB Bandwidth', included: true },
+                { text: 'Unlimited Databases', included: true },
+                { text: 'Free SSL Certificate', included: true },
+                { text: '24/7 Support', included: true },
+                { text: 'Advanced Analytics', included: false },
+                { text: 'Dedicated IP', included: false },
+            ],
+        },
+        {
+            title: 'Regular Plans',
+            price: 49,
+            iconSrc: './../../src/assets/images/pricingIcon1_1.svg',
+            features: [
+                { text: '100 GB SSD Storage', included: true },
+                { text: '200 GB Bandwidth', included: true },
+                { text: 'Unlimited Databases', included: true },
+                { text: 'Free SSL Certificate', included: true },
+                { text: '24/7 Support', included: true },
+                { text: 'Advanced Analytics', included: false },
+                { text: 'Dedicated IP', included: false },
+            ],
+        }
+    ];
+
+
     return (
         <section className='pric-sec d-flex flex-column justify-content-center align-items-center'>
             <CenterTitle title={'OUR PRICING'} text={'Our Awesome Pricing Plans'} />
@@ -22,72 +64,16 @@ export default function Pricing() {
             </div>
 
             <div className='p-5 container d-flex flex-wrap justify-content-center gap-5'>
-                <Card className='pricing-card mx-2 p-3' style={{ width: '18rem' }}>
-                    <div className='card-intro w-100 p-3 d-flex justify-content-between align-items-center text-light'>
-                        <div>
-                            <h6>Regular Plans</h6>
-                            <p><span className='fs-4'>$49</span>/Month</p>
-                        </div>
-                        <img src="./../../src/assets/images/pricingIcon1_1.svg" alt="" />
-                    </div>
-                    <Card.Body>
-                        <ul className='p-0 d-flex flex-column gap-2'>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><GiCheckMark className='primary-color'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><GiCheckMark className='primary-color'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><GiCheckMark className='primary-color'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><GiCheckMark className='primary-color'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><GiCheckMark className='primary-color'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><RxCross2 className='text-danger'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><RxCross2 className='text-danger'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            
-                        </ul>
-                    </Card.Body>
-                        <button className='w-100 bg-light'>GET STARTED NOW <TbArrowNarrowRight /></button>
-                </Card>
-                <Card className='pricing-card mx-2 p-3' style={{ width: '18rem' }}>
-                    <div className='card-intro w-100 p-3 d-flex justify-content-between align-items-center text-light'>
-                        <div>
-                            <h6>Regular Plans</h6>
-                            <p><span className='fs-4'>$49</span>/Month</p>
-                        </div>
-                        <img src="./../../src/assets/images/pricingIcon1_1.svg" alt="" />
-                    </div>
-                    <Card.Body>
-                        <ul className='p-0 d-flex flex-column gap-2'>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><GiCheckMark className='primary-color'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><GiCheckMark className='primary-color'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><GiCheckMark className='primary-color'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><GiCheckMark className='primary-color'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><GiCheckMark className='primary-color'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><RxCross2 className='text-danger'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><RxCross2 className='text-danger'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            
-                        </ul>
-                    </Card.Body>
-                        <button className='w-100 bg-light'>GET STARTED NOW <TbArrowNarrowRight /></button>
-                </Card>
-                <Card className='pricing-card mx-2 p-3' style={{ width: '18rem' }}>
-                    <div className='card-intro w-100 p-3 d-flex justify-content-between align-items-center text-light'>
-                        <div>
-                            <h6>Regular Plans</h6>
-                            <p><span className='fs-4'>$49</span>/Month</p>
-                        </div>
-                        <img src="./../../src/assets/images/pricingIcon1_1.svg" alt="" />
-                    </div>
-                    <Card.Body>
-                        <ul className='p-0 d-flex flex-column gap-2'>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><GiCheckMark className='primary-color'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><GiCheckMark className='primary-color'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><GiCheckMark className='primary-color'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><GiCheckMark className='primary-color'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><GiCheckMark className='primary-color'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><RxCross2 className='text-danger'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            <li className='d-flex justify-content-between align-items-center m-0'><p className='d-flex align-items-center gap-1 m-0'><RxCross2 className='text-danger'/> 100 GB SSD Storage</p><FaRegCircleQuestion /></li>
-                            
-                        </ul>
-                    </Card.Body>
-                        <button className='w-100 bg-light'>GET STARTED NOW <TbArrowNarrowRight /></button>
-                </Card>
+
+                {
+                    cardData.map((e, index) => (
+                        <PriceCard title={e.title}
+                            price={e.price}
+                            iconSrc={e.iconSrc}
+                            features={e.features}
+                        />
+                    ))
+                }
             </div>
 
         </section>
