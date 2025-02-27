@@ -1,0 +1,13 @@
+.blog-card {
+    height: 500px;
+    margin-bottom: 100px;
+}
+.blog-card .b-card {
+    width: 85% !important;
+    background-color: white !important;
+    border: none;
+    position : absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 220px;
+}

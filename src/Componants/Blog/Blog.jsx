@@ -1,82 +1,49 @@
 import './Blog.css'
 import React from 'react'
-import Card from 'react-bootstrap/Card';
-import { TbArrowNarrowLeft } from "react-icons/tb";
 import { TbArrowNarrowRight } from "react-icons/tb";
 import LeftTitle from '../LeftTitle/LeftTitle';
+import BlogCard from '../BlogCard/BlogCard';
 
 export default function Blog() {
+
+  const data = [
+    {
+      'img': './../../src/assets/images/blogThumb1_2.webp',
+      'date':'MARCH 14,2024',
+      'title':'Best And Fastest Data Server Ever',
+      'profileImg':'./../../src/assets/images/blogProfile1_2.webp',
+      'name':'Kristin Watson',
+      'desc':'Web Designer'
+    },
+    {
+      'img': './../../src/assets/images/blogThumb1_3.webp',
+      'date':'MARCH 14,2024',
+      'title':'Best And Fastest Data Server Ever',
+      'profileImg':'./../../src/assets/images/blogProfile1_3.webp',
+      'name':'Kristin Watson',
+      'desc':'Web Designer'
+    },
+    {
+      'img': './../../src/assets/images/blogThumb1_1.webp',
+      'date':'MARCH 14,2024',
+      'title':'Best And Fastest Data Server Ever',
+      'profileImg':'./../../src/assets/images/blogProfile1_1.webp',
+      'name':'Kristin Watson',
+      'desc':'Web Designer'
+    }
+  ]
   return (
     <section className='py-5 position-relative'>
-      <LeftTitle title = {'BLOG & NEWS'} text = {'Featyred News And Insights'} />
+      <LeftTitle title = {'BLOG & NEWS'} text = {'Featured News And Insights'} />
 
       <div className='container my-5 d-flex flex-wrap justify-content-center gap-5'>
-        <div className='blog-card position-relative'>
-          <img src="./../../src/assets/images/blogThumb1_2.webp" alt="" width={'400px'}/>
-          <Card className='b-card shadow px-2' style={{ width: '18rem' }}>
-            <Card.Body className='d-flex flex-column gap-3'>
-              <div className='d-flex align-items-center gap-4'>
-                <p className='primary-color add-border rounded-pill px-3 py-1'>Uncategorized</p>
-                <p>MARCH 14,2024</p>
-              </div>
-              <Card.Title className='border-bottom pb-3'>Best And Fastest Data Server Ever</Card.Title>
-              <div className='d-flex justify-content-between align-items-center'>
-                <div className='d-flex align-items-center gap-3'>
-                  <img src="./../../src/assets/images/blogProfile1_2.webp" alt="" />
-                  <div>
-                    <h6>Kristin Watson</h6>
-                    <p className='m-0'>Web Designer</p>
-                  </div>
-                </div>
-                <TbArrowNarrowRight className='fs-1' />
-              </div>
-            </Card.Body>
-          </Card>
-        </div>
-        <div className='blog-card position-relative d-none d-lg-block d-md-block'>
-          <img src="./../../src/assets/images/blogThumb1_3.webp" alt="" width={'400px'}/>
-          <Card className='b-card shadow px-2' style={{ width: '18rem' }}>
-            <Card.Body className='d-flex flex-column gap-3'>
-              <div className='d-flex align-items-center gap-4'>
-                <p className='primary-color add-border rounded-pill px-3 py-1'>Uncategorized</p>
-                <p>MARCH 14,2024</p>
-              </div>
-              <Card.Title className='border-bottom pb-3'>Best And Fastest Data Server Ever</Card.Title>
-              <div className='d-flex justify-content-between align-items-center'>
-                <div className='d-flex align-items-center gap-3'>
-                  <img src="./../../src/assets/images/blogProfile1_3.webp" alt="" />
-                  <div>
-                    <h6>Kristin Watson</h6>
-                    <p className='m-0'>Web Designer</p>
-                  </div>
-                </div>
-                <TbArrowNarrowRight className='fs-1' />
-              </div>
-            </Card.Body>
-          </Card>
-        </div>
-        <div className='blog-card position-relative d-none d-lg-block d-md-block'>
-          <img src="./../../src/assets/images/blogThumb1_1.webp" alt="" width={'400px'}/>
-          <Card className='b-card shadow px-2' style={{ width: '18rem' }}>
-            <Card.Body className='d-flex flex-column gap-3'>
-              <div className='d-flex align-items-center gap-4'>
-                <p className='primary-color add-border rounded-pill px-2 py-1'>Uncategorized</p>
-                <p>MARCH 14,2024</p>
-              </div>
-              <Card.Title className='border-bottom pb-3'>Best And Fastest Data Server Ever</Card.Title>
-              <div className='d-flex justify-content-between align-items-center'>
-                <div className='d-flex align-items-center gap-3'>
-                  <img src="./../../src/assets/images/blogProfile1_1.webp" alt="" />
-                  <div>
-                    <h6>Kristin Watson</h6>
-                    <p className='m-0'>Web Designer</p>
-                  </div>
-                </div>
-                <TbArrowNarrowRight className='fs-1' />
-              </div>
-            </Card.Body>
-          </Card>
-        </div>
+        
+        {
+          data.map((item, index) => (
+            <BlogCard img={item.img} date={item.date} title={item.title} profileImg={item.profileImg} name={item.name} desc={item.desc} />
+          ))
+        }
+
       </div>
 
       <section className='home-footer my-5 p-5 d-flex flex-wrap justify-content-end align-items-center gap-5 row-gap-1 position-absolute'>
