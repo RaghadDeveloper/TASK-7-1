@@ -8,8 +8,32 @@ import { TbArrowNarrowRight } from "react-icons/tb";
 import { FaArrowRight } from "react-icons/fa6";
 import { DiEnvato } from "react-icons/di";
 import { FiShare2 } from "react-icons/fi";
+import MemberCard from '../MemberCard/MemberCard';
 
 export default function Member() {
+
+    const data = [
+        {
+            'img':'./../../src/assets/images/04.webp',
+            'name':'Masirul Islam',
+            'desc':'Web Designer'
+        },
+        {
+            'img':'./../../src/assets/images/05.webp',
+            'name':'Jessica Mardol',
+            'desc':'Cyber Expert'
+        },
+        {
+            'img':'./../../src/assets/images/06.webp',
+            'name':'Arnold Hemingway',
+            'desc':'Web Expert'
+        },
+        {
+            'img':'./../../src/assets/images/07.webp',
+            'name':'Shikon Hoque',
+            'desc':'Data Analyst'
+        }
+    ]
     return (
         <section className='py-5'>
             <div className='container'>
@@ -21,46 +45,13 @@ export default function Member() {
                     <Button className='mem-btn rounded-pill d-flex justify-content-center align-items-center gap-2 px-3 py-2'>All Members <FaArrowRight /> </Button>
                 </div>
                 <Row className='d-flex flex-wrap justify-content-between row-gap-5 my-5'>
-                    <Col lg={3} md={6} sm={12}>
-                    <Card className='w-100 mem-card p-0 rounded text-light' style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="./../../src/assets/images/04.webp" />
-                        <FiShare2 className='share-icon text-light'/>
-                        <Card.Body className='body rounded d-flex flex-column justify-content-center align-items-center '>
-                            <Card.Title>Masirul Islam</Card.Title>
-                            <Card.Text>Web Designer </Card.Text>
-                        </Card.Body>
-                    </Card>
-                    </Col>
-                    <Col lg={3} md={6} sm={12}>
-                    <Card className='w-100 mem-card p-0 rounded text-light' style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="./../../src/assets/images/05.webp" />
-                        <FiShare2 className='share-icon text-light'/>
-                        <Card.Body className='body rounded d-flex flex-column justify-content-center align-items-center '>
-                            <Card.Title>Jessica Mardol</Card.Title>
-                            <Card.Text>Cyber Expert</Card.Text>
-                        </Card.Body>
-                    </Card>
-                    </Col>
-                    <Col lg={3} md={6} sm={12}>
-                    <Card className='w-100 mem-card p-0 rounded text-light' style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="./../../src/assets/images/06.webp" />
-                        <FiShare2 className='share-icon text-light'/>
-                        <Card.Body className='body rounded d-flex flex-column justify-content-center align-items-center '>
-                            <Card.Title>Arnold Hemingway</Card.Title>
-                            <Card.Text>Web Expert </Card.Text>
-                        </Card.Body>
-                    </Card>
-                    </Col>
-                    <Col lg={3} md={6} sm={12}>
-                    <Card className='w-100 mem-card p-0 rounded text-light' style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="./../../src/assets/images/07.webp" />
-                        <FiShare2 className='share-icon text-light'/>
-                        <Card.Body className='body rounded d-flex flex-column justify-content-center align-items-center '>
-                            <Card.Title>Shikon Hoque</Card.Title>
-                            <Card.Text>Data Analyst</Card.Text>
-                        </Card.Body>
-                    </Card>
-                    </Col>
+                    {
+                        data.map((item, index)=>(
+                            <Col lg={3} md={6} sm={12}>
+                                <MemberCard img={item.img} name={item.name} desc={item.desc} />
+                            </Col>
+                        ))
+                    }
                 </Row>
 
                 <div className='d-flex justify-content-center align-items-center px-4 py-5'>
