@@ -5,10 +5,9 @@ import { FaStar } from "react-icons/fa6";
 import { CiStar } from "react-icons/ci";
 import { RiDoubleQuotesR } from "react-icons/ri";
 export default function ClientCard({id, text, img, name, desc}) {
-    console.log(id)
     return (
         
-        <Card className={`${id==2? 'client-mid-card' : ''} w-100 client-card rounded p-3 d-none d-lg-flex d-md-flex`} style={{ width: '18rem' }}>
+        <Card className={`${id==2? 'client-mid-card d-block' : ''} w-100 client-card rounded p-3 d-lg-flex d-md-flex`} style={{ width: '18rem' }}>
             <div className='p-2 d-flex align-items-center fs-4 text-warning'><FaStar /><FaStar /><FaStar /><FaStar /><CiStar className='fs-3' /></div>
             <Card.Body>
                 <Card.Text>

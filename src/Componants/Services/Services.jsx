@@ -1,6 +1,5 @@
 import './Services.css'
 import React from 'react'
-import { VscTriangleRight } from "react-icons/vsc";
 import LeftTitle from '../LeftTitle/LeftTitle';
 import ServiceCard1 from '../ServiceCard1/ServiceCard1';
 import ServiceCard2 from '../ServiceCard2/ServiceCard2';
@@ -19,7 +18,14 @@ export default function Services() {
 
             <div className='card-group2 py-5 position-relative'>
                 <img src="./../../src/assets/images/video.webp" alt="" className='video container' />
-                <VscTriangleRight className='video-icon' />
+                <iframe
+                    className='video container'
+                    src="https://www.youtube.com/embed/BU0HuZLGSuU?si=AKFEZJ6yZ6bO1VpH"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title="Video player"
+                ></iframe>
                 <div className='container d-flex flex-wrap justify-content-between'>
                     <ServiceCard2 num={'01'} title={'Requirement'} text={'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'} />
                     <ServiceCard2 num={'02'} title={'UI/UX Design'} text={'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'} />

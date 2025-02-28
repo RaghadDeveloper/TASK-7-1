@@ -11,3 +11,11 @@
 .save {
     color: #384bff;
 }
+
+@media (max-width: 576px) {
+    .price-head {
+        flex-direction: column;
+        align-items: center !important;
+        gap: 0px !important;
+    }
+}

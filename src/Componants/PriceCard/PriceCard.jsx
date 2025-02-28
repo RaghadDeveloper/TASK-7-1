@@ -17,7 +17,7 @@ export default function PriceCard({ title, price, features, iconSrc }) {
                 <img src={iconSrc} alt="" />
             </div>
             <Card.Body>
-                <ul className='p-0 d-flex flex-column gap-2'>
+                <ul className='p-1 d-flex flex-column gap-2'>
                     {features.map((feature, index) => (
                         <li key={index} className='d-flex justify-content-between align-items-center m-0'>
                             <p className='d-flex align-items-center gap-1 m-0'>

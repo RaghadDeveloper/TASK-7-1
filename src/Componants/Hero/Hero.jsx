@@ -40,8 +40,8 @@ export default function Hero() {
                 <HeroRev title = {'Google'} />
             </div>
         </div>
-    </section>
     <img src="./../../src/assets/images/heroShape1_3.webp" alt="heroShape1_3" className='hero-shape bg-light'/>
+    </section>
     
     </>
   )

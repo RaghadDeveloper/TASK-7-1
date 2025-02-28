@@ -54,7 +54,7 @@ export default function Pricing() {
     return (
         <section className='pric-sec d-flex flex-column justify-content-center align-items-center'>
             <CenterTitle title={'OUR PRICING'} text={'Our Awesome Pricing Plans'} />
-            <div className='d-flex gap-4 align-items-end'>
+            <div className='price-head px-5 d-flex gap-4 justify-content-center align-items-end flex-wrap'>
                 <div className='month-year rounded-pill d-flex justify-content-center align-items-center px-3 py-2 gap-3'>
                     <p className='monthly text-light rounded-pill p-2 m-0'>Monthly</p>
                     <p className='m-0'>Yearly</p>

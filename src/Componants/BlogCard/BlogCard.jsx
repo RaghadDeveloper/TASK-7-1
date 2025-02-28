@@ -5,7 +5,7 @@ import { TbArrowNarrowRight } from "react-icons/tb";
 
 export default function BlogCard({img, date, title, profileImg, name, desc}) {
     return (
-        <div className='blog-card position-relative'>
+        <div className='blog-card d-flex justify-content-center position-relative'>
             <img src={img} alt="" width={'400px'} />
             <Card className='b-card shadow px-2' style={{ width: '18rem' }}>
                 <Card.Body className='d-flex flex-column gap-3'>

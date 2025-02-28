@@ -1,0 +1,8 @@
+@media (max-width: 576px) {
+    .brand img {
+        display: none;
+    }
+    .brand .drop-box {
+        display: block;
+    }
+}

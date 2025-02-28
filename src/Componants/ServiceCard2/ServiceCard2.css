@@ -2,3 +2,8 @@
     background-color: #18185e !important;
     border: none !important;
 }
+.card2 .num {
+    -webkit-text-stroke: 1px white;
+    color: #18185e;
+    font-size: 60px;
+}

@@ -6,6 +6,7 @@
     margin: 7px auto !important;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 40px;
 }
 .nav-sec2{
     display: flex !important;
@@ -13,4 +14,21 @@
 }
 .nav-btn {
     background-color: #384bff !important;
+}
+.search-icon , .shop-icon {
+    display: none !important;
+}
+
+@media (max-width: 992px) {
+    .search-icon , .shop-icon {
+        display: flex !important;
+    }
+    .menu-end .search-icon , .menu-end .shop-icon{
+        display: none !important;
+    }
+}
+@media (max-width: 576px) {
+    Nav img {
+        width: 120px;
+    }
 }
