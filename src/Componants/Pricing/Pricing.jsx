@@ -2,6 +2,8 @@ import './Pricing.css'
 import React from 'react'
 import CenterTitle from '../CenterTitle/CenterTitle';
 import PriceCard from '../PriceCard/PriceCard';
+import icon1 from '../../assets/images/pricingIcon1_1.svg'
+import icon2 from '../../assets/images/pricingIcon1_2.svg'
 
 export default function Pricing() {
 
@@ -9,7 +11,7 @@ export default function Pricing() {
         {
             title: 'Regular Plans',
             price: 49,
-            iconSrc: './../../src/assets/images/pricingIcon1_1.svg',
+            iconSrc: icon1,
             features: [
                 { text: '100 GB SSD Storage', included: true },
                 { text: '200 GB Bandwidth', included: true },
@@ -23,7 +25,7 @@ export default function Pricing() {
         {
             title: 'Regular Plans',
             price: 49,
-            iconSrc: './../../src/assets/images/pricingIcon1_1.svg',
+            iconSrc: icon1,
             features: [
                 { text: '100 GB SSD Storage', included: true },
                 { text: '200 GB Bandwidth', included: true },
@@ -37,7 +39,7 @@ export default function Pricing() {
         {
             title: 'Regular Plans',
             price: 49,
-            iconSrc: './../../src/assets/images/pricingIcon1_1.svg',
+            iconSrc: icon1,
             features: [
                 { text: '100 GB SSD Storage', included: true },
                 { text: '200 GB Bandwidth', included: true },
@@ -59,7 +61,7 @@ export default function Pricing() {
                     <p className='monthly text-light rounded-pill p-2 m-0'>Monthly</p>
                     <p className='m-0'>Yearly</p>
                 </div>
-                <img src="./../../src/assets/images/pricingIcon1_2.svg" alt="" />
+                <img src={icon2} alt="" />
                 <p className='save'>Save 25%</p>
             </div>
 

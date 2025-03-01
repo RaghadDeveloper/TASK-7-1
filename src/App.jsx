@@ -9,14 +9,12 @@ function App() {
 
   return (
     <>
-      <Router>
         <Routes>
           <Route path='/' element={<MainPage />} />
           <Route path='/About' element={<About />}/>
           <Route path='/Contact' element={<ContactPage />} />
           <Route />
         </Routes>
-      </Router>
     </>
   )
 }

@@ -1,35 +1,37 @@
 import './Member.css'
 import React from 'react'
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import { Col, Row } from 'react-bootstrap';
 import { TbArrowNarrowLeft } from "react-icons/tb";
 import { TbArrowNarrowRight } from "react-icons/tb";
 import { FaArrowRight } from "react-icons/fa6";
 import { DiEnvato } from "react-icons/di";
-import { FiShare2 } from "react-icons/fi";
 import MemberCard from '../MemberCard/MemberCard';
+import img1 from '../../assets/images/04.webp'
+import img2 from '../../assets/images/05.webp'
+import img3 from '../../assets/images/06.webp'
+import img4 from '../../assets/images/07.webp'
 
 export default function Member() {
 
     const data = [
         {
-            'img':'./../../src/assets/images/04.webp',
+            'img': img1,
             'name':'Masirul Islam',
             'desc':'Web Designer'
         },
         {
-            'img':'./../../src/assets/images/05.webp',
+            'img':img2,
             'name':'Jessica Mardol',
             'desc':'Cyber Expert'
         },
         {
-            'img':'./../../src/assets/images/06.webp',
+            'img':img3,
             'name':'Arnold Hemingway',
             'desc':'Web Expert'
         },
         {
-            'img':'./../../src/assets/images/07.webp',
+            'img': img4,
             'name':'Shikon Hoque',
             'desc':'Data Analyst'
         }

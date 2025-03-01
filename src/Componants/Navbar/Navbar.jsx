@@ -8,13 +8,14 @@ import { CiSearch } from "react-icons/ci";
 import { FaArrowRight } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 import { FaShoppingCart } from "react-icons/fa";
+import logo from '../../assets/images/logo.svg'
 
 function r_Navbar() {
   const navigate = useNavigate();
   return (
     <Navbar collapseOnSelect expand="lg" className="w-100 bg-body-tertiary m-2 px-3 z-3 nav position-fixed top-0">
       <Container className='d-flex justify-content-between'>
-        <Navbar.Brand href="/"><img src="./../../src/assets/images/logo.svg" alt="logo" width={'150px'} /></Navbar.Brand>
+        <Navbar.Brand href="/"><img src={logo} alt="logo" width={'150px'} /></Navbar.Brand>
         <div className='d-flex align-items-center gap-3'>
           <CiSearch className='search-icon fs-3 d-block' />
           <FaShoppingCart className='shop-icon fs-3 d-block primary-color' />

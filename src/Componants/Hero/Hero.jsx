@@ -6,14 +6,17 @@ import { GoPulse } from "react-icons/go";
 import { GiCheckMark } from "react-icons/gi";
 import { RiStarSFill } from "react-icons/ri";
 import HeroRev from '../HeroRev/HeroRev';
+import heroimg from '../../assets/images/heroThumb1_1.webp'
+import heroShape1 from '../../assets/images/heroShape1_1.webp'
+import heroShape3 from '../../assets/images/heroShape1_3.webp'
 
 
 export default function Hero() {
   return (
     <>
     <section className='hero mt-5 pt-0 px-2 position-relative top-0 d-flex justify-content-evenly align-items-end flex-wrap text-white flex-row-reverse'>
-        <img src="./../../src/assets/images/heroThumb1_1.webp" alt="hero" width={'425px'}/>
-        <img src="./../../src/assets/images/heroShape1_1.webp" alt=""className='shape1 d-none d-lg-block' />
+        <img src={heroimg} alt="hero" width={'425px'}/>
+        <img src={heroShape1} alt=""className='shape1 d-none d-lg-block' />
         <div className='hero-sec1 mt-5 pt-5 d-flex flex-column gap-5'>
             <div className='d-flex flex-column gap-3'>
                 <p className='border border-white rounded-pill d-flex justify-content-center align-items-center px-4 py-2 gap-2'>
@@ -40,7 +43,7 @@ export default function Hero() {
                 <HeroRev title = {'Google'} />
             </div>
         </div>
-    <img src="./../../src/assets/images/heroShape1_3.webp" alt="heroShape1_3" className='hero-shape bg-light'/>
+    <img src={heroShape3} alt="heroShape1_3" className='hero-shape bg-light'/>
     </section>
     
     </>

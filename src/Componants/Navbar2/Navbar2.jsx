@@ -8,6 +8,8 @@ import Button from 'react-bootstrap/Button';
 import { CiSearch } from "react-icons/ci";
 import { FaArrowRight } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
+import logo from '../../assets/images/logo.svg'
+import plane from '../../assets/images/plane.webp'
 
 export default function Navbar2() {
   const navigate = useNavigate();
@@ -16,9 +18,9 @@ export default function Navbar2() {
   }
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary position-fixed z-3 w-100">
-      <img src="./../../src/assets/images/plane.webp" alt="" width={'70px'} className='d-none d-lg-flex'/>
+      <img src={plane} alt="" width={'70px'} className='d-none d-lg-flex'/>
       <Container>
-        <Navbar.Brand href="/"><img src="./../../src/assets/images/logo.svg" alt="logo" width={'150px'}/></Navbar.Brand>
+        <Navbar.Brand href="/"><img src={logo} alt="logo" width={'150px'}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="m-auto">

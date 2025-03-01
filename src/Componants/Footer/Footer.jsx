@@ -13,6 +13,9 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdAttachEmail } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
+import logoImg from '../../assets/images/logoW.svg'
+import img1 from '../../assets/images/footerThumb1_1.webp'
+import img2 from '../../assets/images/footerThumb1_2.webp'
 
 
 export default function Footer(pageName) {
@@ -48,7 +51,7 @@ export default function Footer(pageName) {
             
             <div className='container d-flex flex-wrap justify-content-between gap-5 row-gap-0'>
                 <Card className='card2 d-flex flex-column gap-4 py-5 text-light' style={{ width: '18rem' }}>
-                    <img src="./../../src/assets/images/logoW.svg" alt="" width={'200px'} />
+                    <img src={logoImg} alt="" width={'200px'} />
                     <span className='footer-line'></span>
                     <Card.Body className='p-0 mt-3'>
                         <Card.Text>
@@ -82,7 +85,7 @@ export default function Footer(pageName) {
                     <span className='footer-line'></span>
                     <Card.Body className='p-0 mt-3 d-flex flex-column gap-4'>
                         <div className='d-flex gap-3'>
-                            <img src="./../../src/assets/images/footerThumb1_1.webp" alt="" width={'78px'} height={'78px'} />
+                            <img src={img1} alt="" width={'78px'} height={'78px'} />
                             <div className='d-flex flex-column justify-content-between'>
                                 <p className='m-0 d-flex align-items-center gap-2'><MdOutlineCalendarMonth />15th April, 2024</p>
                                 <p className='m-0'>Top 5 Most Famous</p>
@@ -90,7 +93,7 @@ export default function Footer(pageName) {
                             </div>
                         </div>
                         <div className='d-flex gap-3'>
-                            <img src="./../../src/assets/images/footerThumb1_2.webp" alt="" width={'78px'} height={'78px'} />
+                            <img src={img2} alt="" width={'78px'} height={'78px'} />
                             <div className='d-flex flex-column justify-content-between'>
                                 <p className='m-0 d-flex align-items-center gap-2'><MdOutlineCalendarMonth />20th June, 2024</p>
                                 <p className='m-0'>The Surfing Man Will Blow</p>

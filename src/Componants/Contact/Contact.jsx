@@ -7,6 +7,7 @@ import { TbArrowNarrowRight } from "react-icons/tb";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdAttachEmail } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
+import img from '../../assets/images/video.webp'
 
 export default function Contact() {
   return (
@@ -41,7 +42,7 @@ export default function Contact() {
                   </div>
               </div>
             </Card.Body>
-            <Card.Img variant="top" src="./../../src/assets/images/video.webp" />
+            <Card.Img variant="top" src={img} />
           </Card>
         </Col>
 
