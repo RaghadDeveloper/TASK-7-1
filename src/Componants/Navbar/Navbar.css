@@ -1,34 +1,40 @@
 .nav {
-    max-width: 1200px;
-    background-color: white !important;
-    border: 5px solid #c3c8ff;
-    border-top: none;
-    margin: 7px auto !important;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 40px;
+  max-width: 1200px;
+  background-color: white !important;
+  border: 5px solid #c3c8ff;
+  border-top: none;
+  margin: 7px auto !important;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 40px;
 }
-.nav-sec2{
-    display: flex !important;
-    justify-content: space-between !important;
+.bg-scroll {
+  background-color: #d4e1ff !important;
+}
+.nav-sec2 {
+  display: flex !important;
+  justify-content: space-between !important;
 }
 .nav-btn {
-    background-color: #384bff !important;
+  background-color: #384bff !important;
 }
-.search-icon , .shop-icon {
-    display: none !important;
+.search-icon,
+.shop-icon {
+  display: none !important;
 }
 
 @media (max-width: 992px) {
-    .search-icon , .shop-icon {
-        display: flex !important;
-    }
-    .menu-end .search-icon , .menu-end .shop-icon{
-        display: none !important;
-    }
+  .search-icon,
+  .shop-icon {
+    display: flex !important;
+  }
+  .menu-end .search-icon,
+  .menu-end .shop-icon {
+    display: none !important;
+  }
 }
 @media (max-width: 576px) {
-    Nav img {
-        width: 120px;
-    }
+  Nav img {
+    width: 120px;
+  }
 }
